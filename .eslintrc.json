@@ -1,0 +1,260 @@
+{
+  //TODO: we have to add fileNaming check "check-file" plugin
+  "env": {
+    "browser": true, // Add this to enable browser globals
+
+    // ?? -sarah- why
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser", // Ensure this is set
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+
+  "plugins": ["import", /*"simple-import-sort",*/ "react-hooks", "react"],
+
+  // 2: "error",
+  // 1: "warning",
+  // 0: "off",
+
+  "rules": {
+    /*
+    TODO: the following three roles were not working on the old version of this template (https://github.com/ElNawawy-org/NextTemplate-JS)
+    TODO: put when I have done upgrade the worked but in an unexpected way
+    TODO: so I have commented them till revision
+    "import/no-unused-modules": 2, // it does not work till now
+
+    //If a default import is requested, this rule will report if there is no default export in the imported module.
+    //using it with "import/no-default-export", gives us a full control on the defaults
+    "import/default": 2, // it does not work till now
+
+    "import/no-relative-parent-imports": 2, // it does not work till now
+    */
+
+    //Reports if a resolved path is imported more than once
+    "import/no-duplicates": 2,
+
+    //Forbid using mutable values to be exported (var or let)
+    "import/no-mutable-exports": 2,
+
+    //Forbid importing default that has the same name as a named export
+    "import/no-named-as-default": 2,
+
+    //Force all exports to be in a group
+    "import/group-exports": 2,
+
+    //Force all exports to be at the end of the file
+    "import/exports-last": 2,
+
+    //Force inserting new line after imports
+    "import/newline-after-import": 2,
+
+    //Forbid using anonymous default export
+    "import/no-anonymous-default-export": 2,
+
+    //Forbid using default export
+    "import/no-default-export": 2,
+
+    //Forbid importing a named exported value as a default
+    "import/no-named-default": 2,
+
+    //Enforce a convention of not using namespace (a.k.a. "wildcard" *) imports.
+    "import/no-namespace": 2,
+
+    //Forbid using this: import 'fileName'
+    "import/no-unassigned-import": 2,
+
+    //Force ordering the imports
+    "import/order": [
+      2,
+      {
+        "alphabetize": {
+          "order": "asc"
+        },
+
+        "newlines-between": "always",
+
+        "pathGroups": [
+          {
+            "pattern": "src/atoms/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/molecules/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/organisms/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/templates/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/context/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/helpers/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/hooks/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/validation/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/api",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/locales/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/data/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/dummy/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/adapters/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/assets/icons/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/assets/svg/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/assets/images/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "public/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/fonts",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "src/types/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "./style.module.css",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "globals.css",
+            "group": "external",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ],
+
+    //Forbid using console
+    "no-console": [
+      1,
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+
+    "no-debugger": 2,
+
+    "no-alert": 2,
+
+    //Forbid using the var keyword
+    "no-var": 2,
+
+    //Forbid using undefined variable
+    "no-undef": 2,
+
+    //Forbid unused variables
+    // This is turned off when we have ts, and shall use @typescript-eslint/no-unused-vars instead to resolve the issue with enums
+    "no-unused-vars": 0,
+
+    //Forbid using prop-types because we are using TS
+    //TODO:
+    //"react/prop-types": 2,
+
+    //Forbid to name a hook without "use" prefix
+    "react-hooks/rules-of-hooks": 2,
+
+    "camelcase": 2,
+
+    // to be able to put @ts-ignore whenever needed
+    "@typescript-eslint/ban-ts-comment": 0
+  },
+
+  "overrides": [
+    {
+      "files": ["src/fonts/index.js"],
+      "rules": {
+        "camelcase": 0
+      }
+    },
+    {
+      "files": ["src/pages/**/*"],
+      "rules": {
+        //Forbid using default export
+        "import/no-default-export": 0
+      }
+    },
+    {
+      "files": ["_app.*"],
+      "rules": {
+        //Forbid using this: import 'fileName'
+        "import/no-unassigned-import": 0,
+        "@typescript-eslint/no-unused-vars": [
+          2,
+          {
+            "argsIgnorePattern": "^_"
+          }
+        ]
+      }
+    }
+  ]
+}

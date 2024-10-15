@@ -1,0 +1,18 @@
+.WorkingOnS {
+  min-height: 400px;
+
+  display: grid;
+  gap: var(--gap);
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+
+  font-size: var(--xxl-font-size);
+
+  text-align: center;
+}
+
+.pageNameS {
+  text-decoration: underline;
+}

@@ -1,0 +1,10 @@
+{
+  "bodyUsed": true,
+  "headers": {},
+  "ok": true,
+  "redirected": false,
+  "status": 200,
+  "statusText": "OK",
+  "type": "cors",
+  "url": "https://testing.ticlick-crm.com/api/v1/tickets/list_org_tickets?page_size=10&page_number=1"
+}

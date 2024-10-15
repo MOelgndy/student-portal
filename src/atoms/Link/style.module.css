@@ -1,0 +1,143 @@
+.link svg {
+  height: 22px;
+
+  transition: all var(--transition-time) ease-in-out;
+}
+
+.link {
+  width: fit-content;
+
+  padding-inline: var(--gap);
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(0.5 * var(--gap));
+
+  border-radius: var(--border-radius);
+
+  transition: all var(--transition-time) ease-in-out;
+}
+
+/*
+variant: text
+*/
+.link[data-variant="text"] {
+  padding: 0;
+}
+
+.link[data-color="primary"] {
+  color: var(--primary-rgba);
+}
+
+.link[data-color="secondary"] {
+  color: var(--secondary-rgba);
+}
+
+.link:hover,
+.link[data-active="true"] {
+  color: var(--active-rgba);
+}
+
+.link[data-disabled="true"] {
+  pointer-events: none;
+  color: var(--disabled-rgba);
+}
+
+.link[data-color="primary"] svg {
+  fill: var(--primary-rgba);
+}
+
+.link[data-color="secondary"] svg {
+  fill: var(--secondary-rgba);
+}
+
+.link:hover svg,
+.link[data-active="true"] svg {
+  fill: var(--active-rgba);
+}
+
+.link[data-disabled="true"] svg {
+  fill: var(--disabled-rgba);
+}
+/* =================================== */
+
+/*
+variant: contained
+*/
+.link[data-variant="contained"] {
+  background-color: var(--primary-rgba);
+  color: var(--secondary-rgba);
+}
+
+.link[data-variant="contained"]:hover,
+.link[data-variant="contained"][data-active="true"] {
+  background-color: var(--active-rgba);
+}
+
+.link[data-variant="contained"][data-disabled="true"] {
+  background-color: var(--disabled-rgba);
+}
+
+.link[data-variant="contained"] svg {
+  fill: var(--secondary-rgba);
+}
+/* =================================== */
+
+/*
+variant: contained & secondary
+*/
+.link[data-variant="contained"][data-color="secondary"] {
+  background-color: var(--secondary-rgba);
+  color: var(--primary-rgba);
+}
+
+.link[data-variant="contained"][data-color="secondary"]:hover,
+.link[data-variant="contained"][data-color="secondary"][data-active="true"] {
+  background-color: var(--active-rgba);
+  color: var(--secondary-rgba);
+}
+
+.link[data-variant="contained"][data-color="secondary"] svg {
+  fill: var(--primary-rgba);
+}
+
+.link[data-variant="contained"][data-color="secondary"]:hover svg {
+  fill: var(--secondary-rgba);
+}
+/* =================================== */
+
+/*
+variant: outlined
+*/
+.link[data-variant="outlined"] {
+  border: 1px solid var(--primary-rgba);
+  color: var(--primary-rgba);
+}
+
+.link[data-variant="outlined"]:hover,
+.link[data-variant="outlined"][data-active="true"] {
+  border: 1px solid var(--active-rgba);
+  color: var(--active-rgba);
+}
+
+.link[data-variant="outlined"][data-disabled="true"] {
+  border: 1px solid var(--disabled-rgba);
+  color: var(--disabled-rgba);
+}
+/* =================================== */
+
+/*
+variant: outlined & secondary
+*/
+.link[data-variant="outlined"][data-color="secondary"] {
+  border: 1px solid var(--secondary-rgba);
+  color: var(--secondary-rgba);
+}
+
+.link[data-variant="outlined"][data-color="secondary"]:hover,
+.link[data-variant="outlined"][data-color="secondary"][data-active="true"] {
+  border: 1px solid var(--active-rgba);
+  color: var(--active-rgba);
+}
+/* =================================== */

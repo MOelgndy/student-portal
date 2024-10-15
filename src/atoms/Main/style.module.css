@@ -1,0 +1,10 @@
+.main {
+  min-height: 85dvh;
+
+  padding-block: var(--gap);
+}
+
+.layout {
+  display: grid;
+  gap: var(--gap);
+}

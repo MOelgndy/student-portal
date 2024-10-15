@@ -1,0 +1,15 @@
+.NotFoundS {
+  min-height: 400px;
+
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  text-align: center;
+}
+
+.notFound {
+  font-size: var(--xl-font-size);
+}

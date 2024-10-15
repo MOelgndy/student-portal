@@ -1,0 +1,25 @@
+{
+  //Global ignored words
+  "ignoreWords": [
+    "ElNawawy",
+    "Parens",
+    "webp",
+    "Xlink",
+    "SCREAMCASE",
+    "CODEOWNERS",
+    "camelcase",
+    "openxmlformats",
+    "officedocument",
+    "wordprocessingml",
+    "msword",
+    "snakecase",
+    "abdelfattah",
+    "levntura"
+  ],
+  //To ignore Arabic errors
+  "ignoreRegExpList": ["/[\\u0621-\\u064A]+/"],
+  //This project ignored words
+  "words": ["chartjs", "ticlick"],
+  //This project ignored paths
+  "ignorePaths": ["src/adapters/vocab.json"]
+}

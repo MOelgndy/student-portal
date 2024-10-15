@@ -1,0 +1,7 @@
+.ContainerS {
+  max-width: var(--Container-max-width);
+
+  padding-inline: var(--Container-padding);
+
+  margin: auto;
+}

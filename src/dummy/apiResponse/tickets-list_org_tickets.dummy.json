@@ -1,0 +1,64 @@
+{
+  "result": [
+    {
+      "id": 419,
+      "ticket_number": "419",
+      "title": "task2",
+      "content": null,
+      "status": 2,
+      "priority": 1,
+      "due_date": "2024-08-20T00:00:00Z",
+      "created_at": "2024-08-20T10:41:26.921634Z",
+      "assignee": {
+        "id": 812,
+        "email": "eng.ahmed.elnawawy+Partner1@gmail.com",
+        "first_name": "PartnerOne",
+        "last_name": "Partner",
+        "phone_number": "01234567891"
+      },
+      "reporter": {
+        "id": 805,
+        "email": "employee17.ticlick+1@gmail.com",
+        "first_name": "Ahmed",
+        "last_name": "ElNawawy",
+        "phone_number": "10444444444"
+      },
+      "organization": 225,
+      "watchers": [],
+      "program": null,
+      "incremental_id": 2
+    },
+    {
+      "id": 417,
+      "ticket_number": "417",
+      "title": "task 1",
+      "content": null,
+      "status": 3,
+      "priority": 2,
+      "due_date": "2024-08-17T00:00:00Z",
+      "created_at": "2024-08-18T14:15:34.200420Z",
+      "assignee": {
+        "id": 810,
+        "email": "eng.ahmed.elnawawy+1@gmail.com",
+        "first_name": "staff one",
+        "last_name": "staff",
+        "phone_number": "01234567891"
+      },
+      "reporter": {
+        "id": 805,
+        "email": "employee17.ticlick+1@gmail.com",
+        "first_name": "Ahmed",
+        "last_name": "ElNawawy",
+        "phone_number": "10444444444"
+      },
+      "organization": 225,
+      "watchers": [],
+      "program": null,
+      "incremental_id": 1
+    }
+  ],
+  "rows_total": 2,
+  "pages_count": 1,
+  "pages_start": 1,
+  "pages_stop": 1
+}

@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker-arabic",
+    "aaron-bond.better-comments",
+    "wix.vscode-import-cost",
+    "eamodio.gitlens",
+    "kisstkondoros.vscode-gutter-preview",
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
